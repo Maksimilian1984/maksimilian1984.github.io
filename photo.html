@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="build/css/style.min.css">
+</head>
+<body class="body">
+  <header class="page-header page-header--photo">
+      <nav class="page-header__main-nav main-nav">
+          <div class="page-header__wrapper-toggle">
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="build/img/logo-header-1200.svg">
+                  <source media="(min-width: 660px)" srcset="build/img/logo-header-660.svg">
+                  <img class="page-header__logo" src="build/img/logo-header-320.svg" alt="Pink">
+              </picture>
+              <button class="page-header__toggle button-toggle" type="button">
+                  <div class="button-toggle__item button-toggle__item-1"></div>
+                  <div class="button-toggle__item button-toggle__item-2"></div>
+                  <div class="button-toggle__item button-toggle__item-3"></div>
+                  </button>
+          </div>
+              <ul class="main-nav__list menu">
+                  <li class="menu__item "><a class="menu__link" href="index.html">Главная</a></li>
+                  <li class="menu__item menu__item--active"><a class="menu__link" href="photo.html">Фотографии</a></li>
+                  <li class="menu__item"><a class="menu__link" href="form.html">Конкурс</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">HTML Academy</a></li>
+              </ul>
+          </nav>
+      <section class="banner">
+          <div class="banner__part-1 banner__part-1--photo">
+              <h2 class="banner__title">Фотографии <br> пользователей</h2>
+          </div>
+      </section>
+  </header>
+  <main class="page-main">
+      <section class="photo-gallery">
+          <p class="photo-gallery__text">Взгляните на фотографии, которые выкладывают пользователи!
+              Видите, как не хватает ваших?</p>
+          <div class="photo-gallery__day-photo day-photo">
+              <span class="day-photo__label">ПАНОРАМА ДНЯ</span>
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="build/img/panorama-1200px.jpg">
+                  <source media="(min-width: 660px)" srcset="build/img/panorama-660px.jpg">
+              <img class="day-photo__img" src="build/img/panorama-320px.jpg" alt="day-photo">
+              </picture>
+              <div class="day-photo__wrapper-post">
+              <span class="day-photo__time"><cite class="day-photo__author">Анна</cite>
+              (5 минут назад)</span>
+              <blockquote class="day-photo__text">
+                  Прыгать или нет? Напишите в коментарии свой совет и
+                  смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+              </blockquote>
+              <p class="day-photo__like">
+                  <button class="day-photo__button-like"></button>Нравится: <span class="like__counter">215</span>
+              </p>
+              </div>
+          </div>
+          <div class="photo-gallery__list photo__list">
+              <div class="photo-gallery__item photo__item">
+                  <picture>
+                      <source media="(min-width: 1200px)" srcset="build/img/photo-1-1200.jpg">
+                      <source media="(min-width: 660px)" srcset="build/img/photo-1-660.jpg">
+                  <img class="photo__img" src="build/img/photo-1-320.jpg" alt="photo">
+                  </picture>
+                  <div class="photo__wrapper">
+                  <cite class="photo__author">Левон  <span class="photo__time">(5 часов назад)</span></cite>
+                  <blockquote class="photo__text">
+                      Вчера он на луну летал, сегодня в руки к нам попал.
+                  </blockquote>
+                  <p class="photo__like like">
+                      <button class="photo__button-like"></button>Нравится: <span class="like__counter">356</span>
+                  </p>
+                  </div>
+              </div>
+              <div class="photo-gallery__item photo__item">
+                  <picture>
+                      <source media="(min-width: 1200px)" srcset="build/img/photo-2-1200.jpg">
+                      <source media="(min-width: 660px)" srcset="build/img/photo-2-660.jpg">
+                  <img class="photo__img" src="build/img/photo-2-320.jpg" alt="day-photo">
+                  </picture>
+                  <div class="photo__wrapper">
+                  <cite class="photo__author">Антон  <span class="photo__time">(12 часов назад)</span></cite>
+                  <blockquote class="photo__text">
+                      Соседи будут рады!
+                  </blockquote>
+                  <p class="photo__like like">
+                      <button class="photo__button-like"></button>Нравится: <span class="like__counter">356</span>
+                  </p>
+                  </div>
+              </div>
+              <div class="photo-gallery__item photo__item">
+                  <picture>
+                      <source media="(min-width: 1200px)" srcset="build/img/photo-3-1200.jpg">
+                      <source media="(min-width: 660px)" srcset="build/img/photo-3-660.jpg">
+                  <img class="photo__img" src="build/img/photo-3-320.jpg" alt="photo">
+                  </picture>
+                  <div class="photo__wrapper">
+                  <cite class="photo__author">Борис  <span class="photo__time"> (20 часов назад)</span></cite>
+                  <blockquote class="photo__text">
+                      Здесь могла быть ваша цитата о высоком и вечном.
+                  </blockquote>
+                  <p class="photo__like like">
+                      <button class="photo__button-like"></button>Нравится: <span class="like__counter">356</span>
+                  </p>
+                  </div>
+              </div>
+              <div class="photo-gallery__item photo__item">
+                  <picture>
+                      <source media="(min-width: 1200px)" srcset="build/img/photo-4-1200.jpg">
+                      <source media="(min-width: 660px)" srcset="build/img/photo-4-660.jpg">
+                  <img class="photo__img" src="build/img/photo-4-320.jpg" alt="day-photo">
+                  </picture>
+                  <div class="photo__wrapper">
+                  <cite class="photo__author">Сергей  <span class="photo__time"> (25 часов назад)</span></cite>
+                  <blockquote class="photo__text">
+                      Самая кубанская в мире!
+                  </blockquote>
+                  <p class="photo__like like">
+                      <button class="photo__button-like"></button>Нравится: <span class="like__counter">356</span>
+                  </p>
+                  </div>
+              </div>
+              <div class="photo-gallery__item photo__item">
+                  <picture>
+                      <source media="(min-width: 1200px)" srcset="build/img/photo-5-1200.jpg">
+                      <source media="(min-width: 660px)" srcset="build/img/photo-5-660.jpg">
+                      <img  class="photo__img" src="build/img/photo-5-320.jpg" alt="day-photo">
+                  </picture>
+                  <div class="photo__wrapper">
+                  <cite class="photo__author">Максим  <span class="photo__time">(40 часов назад)</span> </cite>
+                  <blockquote class="photo__text">
+                      Где снег-то?
+                  </blockquote>
+                  <p class="photo__like like">
+                      <button class="photo__button-like"></button>Нравится: <span class="like__counter">356</span>
+                  </p>
+                  </div>
+              </div>
+              <div class="photo-gallery__item photo__item">
+                  <picture>
+                      <source media="(min-width: 1200px)" srcset="build/img/photo-6-1200.jpg">
+                      <source media="(min-width: 660px)" srcset="build/img/photo-6-660.jpg">
+                  <img  class="photo__img" src="build/img/photo-6-320.jpg" alt="day-photo">
+                  </picture>
+                  <div class="photo__wrapper">
+                  <cite class="photo__author">Надежда <span class="photo__time">(45 часов назад)</span></cite>
+
+                  <blockquote class="photo__text">
+                      Всем GM и взаимные лайки!
+                  </blockquote>
+                  <p class="photo__like like">
+                      <button class="photo__button-like"></button>Нравится: <span class="like__counter">356</span>
+                  </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="photo-upload">
+          <div class="photo-upload__text-wrapper">
+          <p class="photo-upload__text">Затмите их всех! <br> Выкладывайте все,
+              что накопилось в телефоне!</p>
+          </div>
+          <div class="photo-upload__form-wrapper">
+              <picture>
+                  <source media="(min-width: 660px)" srcset="build/img/photo-up-660.jpg">
+                  <img class="photo-upload__img" src="build/img/photo-up-320.jpg" alt="">
+              </picture>
+          <form class="photo-upload__form" action="">
+              <input class="photo-upload__tool photo-upload__tool--cut" type="radio" id="tool--cut" name="tool" checked>
+              <label class="photo-upload__label photo-upload__label--cut" for="tool--cut">
+                  <span>
+                    <svg class="photo-upload__tool--cut-svg photo-upload__tool--svg" version="1.1" width="48px" height="48px" preserveAspectRatio="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" >
+  <defs>
+    <clipPath id="clippath2" transform="">
+      <path d="M 0 48 L 48 48 L 48 0 L 0 0 Z" style="fill: none; clip-rule: nonzero;"></path>
+    </clipPath>
+  </defs>
+  <g transform="matrix(1 0 0 -1 0 48)">
+    <g transform="">
+      <path d="M 0 48 L 48 48 L 48 0 L 0 0 Z" style="fill: none;"></path>
+    </g>
+    <g style="clip-path: url(#clippath2);">
+      <g transform="translate(14 14)">
+        <path d="M 0 0 L 0 32 L -4 32 L -4 24 L -12 24 L -12 20 L -4 20 L -4 0 C -4 -2.21 -2.21 -4 0 -4 L 20 -4 L 20 -12 L 24 -12 L 24 -4 L 32 -4 L 32 0 Z M 20 4 L 24 4 L 24 20 C 24 22.21 22.21 24 20 24 L 4 24 L 4 20 L 20 20 Z" ></path>
+      </g>
+    </g>
+  </g>
+</svg>
+                  </span>
+              </label>
+              <input class="photo-upload__tool photo-upload__tool--brightness" type="radio" name="tool" id="tool--brightness">
+              <label class="photo-upload__label photo-upload__label--brightness" for="tool--brightness">
+                  <span>
+                  <svg class="photo-upload__tool--brightness-svg photo-upload__tool--svg" version="1.1" width="48px" height="48px" preserveAspectRatio="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clippath1" transform="">
+      <path d="M 0 48 L 48 48 L 48 0 L 0 0 Z" style="fill: none; clip-rule: nonzero;"></path>
+    </clipPath>
+  </defs>
+  <g transform="matrix(1 0 0 -1 0 48)">
+    <g transform="">
+      <path d="M 0 48 L 48 48 L 48 0 L 0 0 Z" style="fill: none;"></path>
+    </g>
+    <g style="clip-path: url(#clippath1);">
+      <g transform="translate(38 25)">
+        <path d="M 0 0 C 0 0 -4 -4.33 -4 -7 C -4 -9.21 -2.21 -11 0 -11 C 2.21 -11 4 -9.21 4 -7 C 4 -4.33 0 0 0 0 M -27.59 3 L -18 12.58 L -8.41 3 Z M -4.88 5.12 L -22.76 23 L -25.59 20.17 L -20.83 15.41 L -31.12 5.12 C -32.29 3.95 -32.29 2.05 -31.12 0.88 L -20.12 -10.12 C -19.54 -10.71 -18.77 -11 -18 -11 C -17.23 -11 -16.46 -10.71 -15.88 -10.12 L -4.88 0.88 C -3.71 2.05 -3.71 3.95 -4.88 5.12"></path>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath1);">
+      <g transform="">
+        <path d="M 48 5 L 0 5 L 0 8 L 48 8 Z"></path>
+      </g>
+    </g>
+  </g>
+</svg>
+                  </span>
+              </label>
+              <input class="photo-upload__tool photo-upload__tool--contrast" type="radio" name="tool" id="tool--contrast">
+              <label class="photo-upload__label photo-upload__label--contrast" for="tool--contrast">
+                  <span>
+                  <svg class="photo-upload__tool--contrast-svg photo-upload__tool--svg" version="1.1" width="31.9199px" height="31.9199px" preserveAspectRatio="none" viewBox="0 0 31.9199 31.9199" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clippath0" transform="">
+      <path d="M 0 31.92 L 31.92 31.92 L 31.92 0 L 0 0 Z" style="fill: none; clip-rule: nonzero;"></path>
+    </clipPath>
+  </defs>
+  <g transform="matrix(1 0 0 -1 0 31.9199)">
+    <g transform="">
+      <path d="M 0 31.92 L 31.92 31.92 L 31.92 0 L 0 0 Z" style="fill: none;"></path>
+    </g>
+    <g style="clip-path: url(#clippath0);">
+      <g transform="translate(15.96 31.9199)">
+        <path d="M 0 0 C -8.814 0 -15.96 -7.145 -15.96 -15.96 C -15.96 -24.773 -8.814 -31.92 0 -31.92 C 8.814 -31.92 15.96 -24.773 15.96 -15.96 C 15.96 -7.145 8.814 0 0 0 M 0 -4 C 6.595 -4 11.96 -9.365 11.96 -15.96 C 11.96 -22.555 6.595 -27.92 0 -27.92 C -6.595 -27.92 -11.96 -22.555 -11.96 -15.96 C -11.96 -9.365 -6.595 -4 0 -4"></path>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);">
+      <g transform="translate(15.96 7.6289)">
+        <path d="M 0 0 C 4.706 0 8.52 3.813 8.52 8.52 C 8.52 13.225 4.706 17.038 0 17.038"></path>
+      </g>
+    </g>
+  </g>
+</svg>
+                  </span>
+              </label>
+              <button class="photo-upload__button-post button button--mod280-red" type="button">Запостить</button>
+              <button class="photo-upload__button-non button button--mod280-grey" type="reset">Отмена</button>
+          </form>
+          </div>
+      </section>
+  </main>
+  <footer class="page-footer">
+      <section class="footer__social footer__social--inner-page social  ">
+          <picture>
+              <source media="(min-width: 1200px)" srcset="build/img/logo-footer-1200.svg">
+              <img class="footer__logo" src="build/img/logo-footer-320-660.svg" alt="Pink" width="147" height="40">
+          </picture>
+          <ul class="social__list">
+              <li class="social__item social__item--tw"><a class="social__link social__link--tw" href=""></a></li>
+              <li class="social__item social__item--fb"><a class="social__link social__link--fb" href=""></a></li>
+              <li class="social__item social__item--y"><a class="social__link social__link--y" href=""></a></li>
+          </ul>
+          <span class="footer__copyright copyright">Разработано<a class="copyright-link" href="">
+              <svg class="copyright-link__svg" version="1.1" width="154.384px" height="195.325px" preserveAspectRatio="none" viewBox="0 0 154.384 195.325" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clippath1" transform="">
+      <path d="M 0 195.325 L 154.384 195.325 L 154.384 0 L 0 0 Z" style="fill: none; clip-rule: nonzero;"></path>
+    </clipPath>
+  </defs>
+  <g transform="matrix(1 0 0 -1 0 195.325)">
+    <g transform="translate(143.8521 124.9697)">
+      <path d="M 0 0 L -67.02 39.508 L -67.02 39.518 L -67.028 39.513 L -67.036 39.518 L -67.036 39.508 L -133.32 0.046 L -133.32 52.777 L -66.659 59.766 L 0 52.777 Z M -0.054 -6.992 L -18.29 -17.736 L -26.709 -22.696 L -66.858 1.188 L -66.924 -5.763 L -32.607 -26.17 L -32.911 -26.35 L -33.65 -26.785 L -38.526 -29.657 L -66.858 -12.803 L -66.924 -19.754 L -44.562 -33.052 L -49.838 -36.581 L -49.966 -36.658 L -66.858 -26.707 L -66.924 -33.657 L -55.84 -40.185 L -67.131 -46.964 L -133.175 -7.705 L -67.036 32.05 L -67.036 32.043 Z M 0 -73.051 L -66.66 -112.714 L -133.32 -73.051 L -133.32 -15.436 L -66.946 -54.941 L -66.835 -62.101 L -112.369 -35.001 L -112.436 -41.952 L -66.721 -69.427 L -66.608 -76.776 L -112.308 -49.591 L -112.374 -56.541 L -66.66 -84.016 L -20.508 -56.4 L -20.508 -49.418 L -20.565 -49.452 L -20.565 -47.066 L -20.565 -44.202 L -20.565 -26.747 L 0 -14.466 Z M -65.855 69.769 L -66.662 69.853 L -143.352 61.813 L -143.352 -78.755 L -66.66 -124.388 L 10.032 -78.755 L 10.032 61.813 Z"></path>
+    </g>
+    <g transform="">
+      <path d="M 0 195.325 L 154.384 195.325 L 154.384 0 L 0 0 Z" style="fill: none;"></path>
+    </g>
+    <g style="clip-path: url(#clippath1);">
+      <g transform="translate(143.8521 124.9697)">
+        <path d="M 0 0 L -67.02 39.508 L -67.02 39.518 L -67.028 39.513 L -67.036 39.518 L -67.036 39.508 L -133.32 0.046 L -133.32 52.777 L -66.659 59.766 L 0 52.777 L 0 0 Z M -0.054 -6.992 L -18.29 -17.736 L -26.709 -22.696 L -66.858 1.188 L -66.924 -5.763 L -32.607 -26.17 L -32.911 -26.35 L -33.65 -26.785 L -38.526 -29.657 L -66.858 -12.803 L -66.924 -19.754 L -44.562 -33.052 L -49.838 -36.581 L -49.966 -36.658 L -66.858 -26.707 L -66.924 -33.657 L -55.84 -40.185 L -67.131 -46.964 L -133.175 -7.705 L -67.036 32.05 L -67.036 32.043 L -0.054 -6.992 Z M 0 -73.051 L -66.66 -112.714 L -133.32 -73.051 L -133.32 -15.436 L -66.946 -54.941 L -66.835 -62.101 L -112.369 -35.001 L -112.436 -41.952 L -66.721 -69.427 L -66.608 -76.776 L -112.308 -49.591 L -112.374 -56.541 L -66.66 -84.016 L -20.508 -56.4 L -20.508 -49.418 L -20.565 -49.452 L -20.565 -47.066 L -20.565 -44.202 L -20.565 -26.747 L 0 -14.466 L 0 -73.051 Z M -65.855 69.769 L -66.662 69.853 L -143.352 61.813 L -143.352 -78.755 L -66.66 -124.388 L 10.032 -78.755 L 10.032 61.813 L -65.855 69.769 Z"></path>
+      </g>
+    </g>
+  </g>
+</svg>
+          </a>
+       </span>
+      </section>
+  </footer>
+  <script src="src/js/pink.js"></script>
+</body>
+</html>
+
