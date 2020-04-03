@@ -186,6 +186,67 @@
     text-transform: none;
     border: none;
   }
+  .menu__item {
+    position: relative;
+  }
+  .menu__item--active::after {
+    position: relative;
+    bottom: -10px;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  .menu__item--hover::after {
+    position: absolute;
+    bottom: -10px;
+    display: none;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 1;
+    -webkit-transition: translateY 0.3s;
+    transition: translateY 0.3s;
+  }
+  .menu__item--hover:hover::after {
+    display: block;
+    -webkit-animation: menuHover;
+    animation: menuHover;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+}
+@-webkit-keyframes menuHover {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: scaleX(0) translateY(-10px);
+    transform: scaleX(0) translateY(-10px);
+  }
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: scaleX(1) translateY(0);
+    transform: scaleX(1) translateY(0);
+  }
+}
+@keyframes menuHover {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: scaleX(0) translateY(-10px);
+    transform: scaleX(0) translateY(-10px);
+  }
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: scaleX(1) translateY(0);
+    transform: scaleX(1) translateY(0);
+  }
 }
 .button {
   -webkit-box-sizing: border-box;
@@ -1080,6 +1141,10 @@
   color: #d22856;
 }
 .contacts__triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
   height: 0;
   border-top: 35px solid #ffffff;
   border-bottom: 35px solid transparent;
@@ -1087,7 +1152,8 @@
   border-left: 160px solid transparent;
 }
 .contacts__map {
-  min-height: 200px;
+  position: relative;
+  height: 200px;
   background-image: url("../img/background-map.png");
   background-repeat: no-repeat;
   background-position: bottom;

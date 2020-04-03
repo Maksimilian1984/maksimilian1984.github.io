@@ -7,6 +7,7 @@
     <link rel="preload" href="build/font/opensans/opensansbold.woff2" as="font">
     <link rel="preload" href="build/font/opensans/opensanslight.woff2" as="font">
     <link rel="stylesheet" href="build/css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=832d752b-d4e9-435f-9f6d-45a79b5c5099&lang=ru_RU" type="text/javascript"></script>
     <title>Document</title>
 </head>
 <body class="body">
@@ -26,8 +27,8 @@
           </div>
           <ul class="main-nav__list menu">
               <li class="menu__item menu__item--active"><a class="menu__link" href="index.html">Главная</a></li>
-              <li class="menu__item"><a class="menu__link" href="photo.html">Фотографии</a></li>
-              <li class="menu__item"><a class="menu__link" href="form.html">Конкурс</a></li>
+              <li class="menu__item menu__item--hover"><a class="menu__link" href="photo.html">Фотографии</a></li>
+              <li class="menu__item menu__item--hover"><a class="menu__link" href="form.html">Конкурс</a></li>
               <li class="menu__item"><a class="menu__link" href="">HTML Academy</a></li>
           </ul>
       </nav>
@@ -171,7 +172,7 @@
           <p class="contacts__text">Пишите: <br> <span class="contacts__text--red">mail@htmlacademy.ru</span></p>
           <p class="contacts__text">Приезжайте в гости: <br> <span class="contacts__text--red">ул. Большая Конюшенная, 19/8</span></p>
           </div>
-          <div class="contacts__map">
+          <div class="contacts__map" id="map">
               <div class="contacts__triangle"></div>
           </div>
       </section>
@@ -214,5 +215,6 @@
   <script src="build/js/pink.js"></script>
   <script src="build/js/slider-1.js"></script>
   <script src="build/js/slider-2.js"></script>
+  <script src="build/js/map.js"></script>
 </body>
 </html>
