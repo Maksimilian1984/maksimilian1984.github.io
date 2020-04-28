@@ -43,14 +43,14 @@
      <section class="page-form">
          <p class="page-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 
              1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму.</span> </p>
-         <form  class="page-form__form" action="https://echo.htmlacademy.ru" method="">
+         <form  class="page-form__form" action="https://echo.htmlacademy.ru" method="get">
            <div class="page-form__name">
              <label class="page-form__name-label" for="input-surname">Фамилия</label>
-             <input class="page-form__name-input" type="text" id="input-surname" name="input-surname" placeholder="Укажите фамилию *">
+             <input class="page-form__name-input" type="text" id="input-surname" name="input-surname" placeholder="Укажите фамилию *" required pattern="^[a-zA-Z]+$|^[А-Яа-яЁё\s]+$">
              <label class="page-form__name-label" for="input-name">Имя</label>
-             <input class="page-form__name-input" type="text" id="input-name" name="input-name" placeholder="Введите ваше имя *">
+             <input class="page-form__name-input" type="text" id="input-name" name="input-name" placeholder="Введите ваше имя *" required pattern="^[a-zA-Z]+$|^[А-Яа-яЁё\s]+$">
              <label class="page-form__name-label" for="input-patronymic">Отчество</label>
-             <input class="page-form__name-input" type="text" id="input-patronymic" name="input-patronymic" placeholder="Ну и отчество тоже">
+             <input class="page-form__name-input" type="text" id="input-patronymic" name="input-patronymic" placeholder="Ну и отчество тоже" required pattern="^[a-zA-Z]+$|^[А-Яа-яЁё\s]+$">
            </div>
            <fieldset class="page-form__achievements">
              <legend class="page-form__achievements-legend">Ваши безбашенные достижения в путешествии</legend>
@@ -70,9 +70,9 @@
            <div class="page-form__contacts">
                <legend  class="page-form__legend">Контактная информация</legend>
              <label class="page-form__contacts-label" for="input-phone">Номер телефона</label>
-             <input class="page-form__contacts-input" type="text" id="input-phone" name="input-phone" placeholder="Номер, пожалуйста">
+             <input class="page-form__contacts-input" type="tel" id="input-phone" name="input-phone" placeholder="Номер, пожалуйста" required pattern="[0-9]{11}">
              <label class="page-form__contacts-label" for="input-email">Адрес почты</label>
-             <input class="page-form__contacts-input" type="email" id="input-email" name="input-email" placeholder="Введите почту *">
+             <input class="page-form__contacts-input" type="email" id="input-email" name="input-email" placeholder="Введите почту *" required>
            </div>
            <fieldset class="page-form__apps">
              <legend class="page-form__apps-legend">С каким приложением путешествовали?</legend>
@@ -86,7 +86,7 @@
            <fieldset class="page-form__emotions">
              <legend class="page-form__emotions-legend">Опишите свои эмоции</legend>
              <textarea class="page-form__emotions-input" name="emotions" id="emotions" cols="28" rows="7"
-                       placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                       placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
            </fieldset>
            <button class="page-form__button button-rectangle">Отправить форму</button>
            <p class="page-form__note"> <sup>*</sup> — обязательные <span>для заполнения</span> поля</p>

@@ -1980,6 +1980,9 @@
 .page-form__name-input:active {
   border-color: #d22856;
 }
+.page-form__name-input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
 .page-form__achievements {
   position: relative;
   margin: 0;
@@ -2095,6 +2098,9 @@
 }
 .page-form__contacts-input:active {
   border-color: #d22856;
+}
+.page-form__contacts-input:invalid:not(:placeholder-shown) {
+  border-color: red;
 }
 .page-form__apps {
   position: relative;
@@ -2678,4 +2684,9 @@
   .modal-window-message__close {
     width: 460px;
   }
+}
+.modal-window-visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
