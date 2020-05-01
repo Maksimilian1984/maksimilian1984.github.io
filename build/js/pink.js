@@ -26,11 +26,9 @@ var inputEmail = document.querySelector('#input-email');
 var formButton = document.querySelector('.page-form__button');
 var modalWindowError = document.querySelector('.modal-window-error');
 var modalWindowMessage = document.querySelector('.modal-window-message');
-var modalWindowErrorClose = modalWindowError.querySelector('.modal-window-error__close');
-var modalWindowMessageClose = modalWindowMessage.querySelector('.modal-window-message__close');
-var closeModal = function(button) {
-    button.classList.remove('modal-window-visible')
-};
+var modalWindowErrorClose = document.querySelector('.modal-window-error__close');
+var modalWindowMessageClose = document.querySelector('.modal-window-message__close');
+
 
 
 formButton.addEventListener('click', function () {
@@ -39,18 +37,38 @@ formButton.addEventListener('click', function () {
     } else {
         modalWindowError.classList.add('modal-window-visible');
     }
-
     if(!inputEmail.validity.valid) {
-        inputEmail.setCustomValidity('Введите адрес формата name@mail.ru')
+        inputEmail.setCustomValidity('Введите адрес формата name@mail.ru');
+        inputEmail.classList.add('error');
     }
     if(!inputPhone.validity.valid) {
-        inputPhone.setCustomValidity('Введите телефон в формате 0-000-000-00-00')
+        inputPhone.setCustomValidity('Введите телефон в формате 0-000-000-00-00');
+        inputPhone.classList.add('error');
+    }
+    if(!inputName.validity.valid) {
+        inputName.classList.add('error');
+    }
+    if(!inputSurname.validity.valid) {
+        inputSurname.classList.add('error');
+    }
+    if(!inputPatronymic.validity.valid) {
+        inputPatronymic.classList.add('error');
     }
 });
 
-modalWindowErrorClose.addEventListener('click', closeModal (modalWindowError));
+modalWindowErrorClose.addEventListener('click', function () {
+    modalWindowError.classList.remove('modal-window-visible');
+    inputPatronymic.classList.remove( 'error');
+    inputEmail.classList.remove( 'error');
+    inputName.classList.remove( 'error');
+    inputSurname.classList.remove( 'error');
+    inputPhone.classList.remove( 'error');
+    });
 
-modalWindowMessageClose.addEventListener('click', closeModal (modalWindowMessage));
+modalWindowMessageClose.addEventListener('click', function () {
+    modalWindowMessage.classList.remove('modal-window-visible');
+
+});
 
 
 

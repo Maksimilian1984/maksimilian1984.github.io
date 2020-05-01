@@ -843,8 +843,8 @@
     background-repeat: no-repeat;
   }
   .reviews__wrapper {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
   .reviews__item {
     width: 1200px;
@@ -925,6 +925,14 @@
     right: 100px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+  }
+  .position-1 {
+    -webkit-transform: translateX(-1200px);
+    transform: translateX(-1200px);
+  }
+  .position-2 {
+    -webkit-transform: translateX(-2400px);
+    transform: translateX(-2400px);
   }
 }
 .prise {
@@ -2545,6 +2553,9 @@
   .page-form__note span {
     display: inline;
   }
+}
+.error {
+  border-color: red;
 }
 .modal-window-error {
   position: fixed;
